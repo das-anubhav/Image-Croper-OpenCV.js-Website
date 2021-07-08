@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OpenCV Image Croper Assignment</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/idcrop.css">
+</head>
+<body>
+	<div class="container" style="margin-top: 60px; margin-bottom: 60px; max-width: 720px">
+		
+		<div class="row">
+			<div id="display"></div>
+		    <div id="toolbar" style="margin-top: 30px"></div>
+		    <canvas id="preview"></canvas>
+		</div>
+		<a href="#" id="download" download="myImage.jpg" onclick="download_img(this);">Download</a>
+    </div>
+    <script src="./assets/js/main.js"></script>
+   	<script>
+   		console.log(IdCrop)
+   		const c = new IdCrop({
+		  displaySelector: "#display",
+		  toolbarSelector: "#toolbar",
+		  previewSelector: "#preview"
+		});
+
+		c.init();
+   	</script>
+</body>
+</html>
